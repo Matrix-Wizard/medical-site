@@ -391,9 +391,29 @@ img
     margin-bottom: 10px
   &-button
     text-align: center
+  &-flip
+    position: relative
+    perspective: 1000px
+    max-width: 334px
+    height: 210px
+    margin-bottom: 30px
+    &:hover .works-front
+      transform: rotateY(180deg)
+    &:hover .works-back
+      transform: rotateY(360deg)
 
-.blobster
-  color: red
+  &-front, &-back
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    transition: 0.7s
+    backface-visibility: hidden
+  &-back
+    transform: rotateY(180deg)
+    background-color: white
+  
 
 .grid
   display: grid
@@ -432,6 +452,8 @@ img
     grid-gap: 30px
     grid-template-areas: "works-how" "works-creative" "works-treatment" "works-img1" "works-img2" "works-button"
 
+
+// achievements
 .achievements
   background: #0087be url(../img/achievements-bg.jpg) no-repeat center center
   background-size: cover
