@@ -200,6 +200,12 @@ img
       line-height: 30px
       width: 265px
       margin: 0 auto
+    img
+      transition: 1s
+      &:hover
+        // transition-duration: 1s
+        transform: rotate(360deg)
+
 @media (max-width: 1270px)
   .advantages
     &-item
@@ -425,6 +431,56 @@ img
     grid-template-columns: 1fr
     grid-gap: 30px
     grid-template-areas: "works-how" "works-creative" "works-treatment" "works-img1" "works-img2" "works-button"
+
+.achievements
+  background: #0087be url(../img/achievements-bg.jpg) no-repeat center center
+  background-size: cover
+  padding-top: 150px
+  padding-bottom: 160px
+  &-wrap
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 30px
+  &-item
+    text-align: center
+    img
+      margin-bottom: 40px
+      transition: 0.3s
+      &:hover
+        transform: scale(1.2)
+  &-number
+    display: block
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 60px
+    font-weight: 500
+    letter-spacing: -1.19px
+    letter-spacing: -1.52px
+    margin-bottom: 20px
+  &-line
+    display: block
+    width: 84px
+    height: 6px
+    background-color: #fff
+    margin: 0 auto
+  &-text
+    margin-top: 20px
+    display: block
+    color: #ffffff
+    font-family: Montserrat
+    font-size: 25px
+    font-weight: 500
+@media (max-width: 770px)
+  .achievements
+    &-wrap
+      grid-template-columns: repeat(2, 1fr)
+@media (max-width: 420px)
+  .achievements
+    padding-top: 90px
+    padding-bottom: 100px
+    &-wrap
+      grid-template-columns: 1fr
+      grid-gap: 50px
 
 .copyright
   color: #615555
