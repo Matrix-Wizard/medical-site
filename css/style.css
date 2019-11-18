@@ -614,7 +614,20 @@ img {
 .works-back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-color: white;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works-back img {
+  max-width: 100%;
 }
 
 .grid {
