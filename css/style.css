@@ -785,3 +785,129 @@ img {
   background-color: #1a1a1a;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.gallery {
+  background: #0087be url(../img/gallery-bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.gallery img {
+  margin-bottom: 30px;
+}
+
+.gallery h2 {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 33px;
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.gallery p {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+
+
+/* team */
+.team {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+
+.team h2 {
+  color: #494949;
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team p {
+  color: #6a6a6a;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.team__member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team__member:last-child {
+  margin-bottom: 0px;
+}
+
+.team__member img {
+  margin-bottom: 25px;
+}
+
+.team__name {
+  color: #6f6f6e;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.team__position {
+  color: #6f6f6e;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: block;
+}
+
+
+
+/* special */
+.special {
+  background-color: #e2e2e2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.special__text {
+  color: #494949;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.special__wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1160px) {
+  .special__wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .special__text {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .special__text {
+    font-size: 24px;
+  }
+}
